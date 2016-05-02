@@ -2,6 +2,7 @@ html, body {
     position: relative;
     min-height: 100%;
     height: 100%;
+    background: #263c61;
 }
 ::-moz-selection {
     background: #b3d4fc;
@@ -56,17 +57,20 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
 #logo {
     width: 250px;
     height: 250px;
     position: fixed;
     top: 40px;
     left: 50px;
-    font-size: 50px;
+    font-size: 24px;
     color: #ccc;
-    background: url('../img/logo.png');
     background-repeat: no-repeat;
-
 }
 #nav {
     width: 900px;
@@ -76,81 +80,81 @@ textarea {
     margin: auto;
 }
 #intro {
-    color: #ecebe2;
-    font-family: sans-serif;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
     width: 900px;
-    margin: auto;
-    font-size: 43px;
-    padding-top: 170px;
-}
+    font-size: 24px;
+    position: absolute;
 
+        top: 95px;
+    left: 200px;
+    font-weight: 100;
+}
 #work {
     border: 1px solid;
     border-color: #ecebe2;
-    height: 900px;
     width: 900px;
     margin: auto;
-    margin-top: 70px;
+    position: absolute;
+    z-index: 99;
+    top: 230px;
+    left: 16%;
 }
-
-.tall{
-  height: 180px;
+.tall {
+    height: 430px;
 }
-
-.small{
-  height: 80px;
+.small {
+    height: 200px;
 }
+#list {
+    width: 103.125%;
+    /* 990px */
+    overflow: hidden;
+    margin-left: -1.562%;
+    /* 15px */
+    margin-bottom: -1.875em;
+    /* 30px */
+}
+.item {
+    width: 30.303%;
+    /* 300px */
+    float: left;
+    margin: 0 1.515% 1.875em;
+    /* 15px 30px */
+    background: #171613;
+}
+@media only screen and ( max-width: 40em)
+/* 640px */
 
-    #list
-    {
-        width: 103.125%; /* 990px */
-        overflow: hidden;
-        margin-left: -1.562%; /* 15px */
-        margin-bottom: -1.875em; /* 30px */
+{
+    .item {
+        width: 46.876%;
+        /* 305px */
+        margin-bottom: 0.938em;
+        /* 15px */
     }
-        .item
-        {
-            width: 30.303%; /* 300px */
-            float: left;
-            margin: 0 1.515% 1.875em; /* 15px 30px */
-            background: #000;
+}
+@media only screen and ( max-width: 20em)
+/* 640px */
 
-        }
-
-        @media only screen and ( max-width: 40em ) /* 640px */
-        {
-            .item
-            {
-                width: 46.876%; /* 305px */
-                margin-bottom: 0.938em; /* 15px */
-            }
-        }
-        @media only screen and ( max-width: 20em ) /* 640px */
-        {
-            #list
-            {
-                width: 100%;
-                margin-left: 0;
-            }
-                .item
-                {
-                    width: 100%;
-                    margin-left: 0;
-                    margin-right: 0;
-                }
-        }
-
-
+{
+    #list {
+        width: 100%;
+        margin-left: 0;
+    }
+    .item {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 #container {
-    background: #fff;
     margin: 42px;
     padding-left: 40px padding-right: 40px padding-top: 80px padding-bottom: 40px
 }
 #container:after {
     clear: both;
 }
-
-
 .header {
     position: relative;
 }
@@ -159,12 +163,12 @@ header {
     min-height: 700px;
 }
 .border-left, .border-right {
-    width: 24px;
+    width: 5px;
     top: 0px;
     bottom: 0px;
 }
 .border-top, .border-bottom {
-    height: 24px;
+    height: 5px;
     left: 0px;
     right: 0px;
 }
@@ -180,12 +184,12 @@ header {
 .border-bottom {
     position: absolute;
     bottom: 0px;
-    background: #e5e5e5;
+    background: #B9B9B9l
 }
 .border-top, .border-left, .border-right {
     position: fixed;
-    background: #e5e5e5;
-    z-index: 10;
+    background: #B9B9B9;
+    z-index: 999;
 }
 
 /* ==========================================================================
