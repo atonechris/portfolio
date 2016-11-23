@@ -1,6 +1,6 @@
 
 html, body {
-	background: #191919;
+	background: #fff;
 	    margin: 0;
 	    padding: 0;
 	    height: 100%;
@@ -45,22 +45,23 @@ h3{
 	width:360px;
 	height: 50px;
 	border-radius: 5px;
-	font-family: 'Gotham-Book', sans-serif;
+	font-family: 'Avenir Next', sans-serif;
 	text-align: center;
 	list-style-type: none;
 }
 
 #nav li{
 		float: left;
-    color: white;
+    color: #bfbfbf;
     margin-right: 26px;
+		margin-top: 61px;
 }
 
-#job{
+#resume{
 	border-bottom: 1px solid white;
-	color: white;
+	color: #909090;
 	font-family: 'Lora', serif;
-	margin-top: 100px
+	margin-top: 160px;
 }
 
 .company{
@@ -182,13 +183,13 @@ a:visited {
 
 #logo{
 	position: absolute;
-	top: 6px;
+	top: 80px;
 	left: 2px;
 	width: 200px;
 	height: 100px;
 	font-family: 'Avenir Next', sans-serif;
 	font-size: 27px;
-	color: white;
+	color: #bfbfbf;
 	letter-spacing: 2px;
 }
 
