@@ -1,0 +1,569 @@
+<html lang="en">
+<link href='../css/disclosure.css' type="text/css" rel="stylesheet">
+
+<style> 
+/** General **/
+body {
+	/** margin: 0;
+	padding: 0; **/
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	background-color: #fff;
+}
+td {
+    font-size: 12px;
+    color: #333;
+}
+a:link,
+a:hover,
+a:active {
+	color: #2866af;
+	outline: none;
+}
+a:visited {
+	color: #5780ae;
+	outline: none;
+}
+p {
+	margin: 12px 0;
+}
+sup,
+td sup {
+	font-size: 0.8em;
+	_font-size: 1em; /* Underscore hack - only read by WinIE */
+	vertical-align: text-top;
+	line-height: 1.2;
+}
+h1,
+td h1,
+div.page_title h1 {
+	margin: 0;
+	padding: 0;
+	font: bold 20px Arial, Helvetica, sans-serif;
+}
+h1 sup {
+	font-size: 0.4em;
+	_font-size: 0.55em; /* Underscore hack - only read by WinIE */
+}
+h2,
+td h2 {
+	font: bold 17px Arial, Helvetica, sans-serif;
+	margin: 10px 0 15px;
+}
+h2 sup {
+	font-size: 0.55em;
+	_font-size: 0.75em; /* Underscore hack - only read by WinIE */
+}
+h3,
+td h3 {
+	font: bold 15px Arial, Helvetica, sans-serif;
+}
+h3 sup {
+	font-size: 0.75em;
+	_font-size: 0.85em; /* Underscore hack - only read by WinIE */
+}
+form {
+	padding: 0;
+	margin: 0;
+}
+li li {
+	display: block;
+	float: none;
+	background-color: transparent;
+	border: 0;
+}
+li:hover ul, li.over ul {
+	display: block;
+}
+hr {
+	background-color: #c6d1de;
+	color: #c6d1de;
+	border-style: none;
+	width: 100%;
+	height: 1px;
+}
+td blockquote {
+	margin: 12px 0 12px 40px;
+}
+
+div.rr-disclosure{
+    margin:0 20px 10px;
+     width:720px;
+}
+
+/** Schumer **/
+div.rr-disclosure div.schumer{display:block}
+
+/** Black background with White text **/
+div.rr-disclosure td.schumertableheader{
+	background-color: #000000;
+	color: #ffffff;
+	padding-left:5px;
+}
+td.schumertableheader P{
+	MARGIN: 0px
+}
+div.rr-disclosure div.schumer table.schumer{
+	width: 100%;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	margin: 0;		
+}
+div.rr-disclosure div.schumer table.schumer td li {
+        text-indent: 0px !important;
+}
+div.rr-disclosure div.schumer table.schumer td.term{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: #f6f6f6;
+	width: 83px;
+	vertical-align: top;
+	padding: 9px;
+	border-spacing:0px;
+}	
+div.rr-disclosure td.termnoborder{
+	border-right: 1px solid #ddd;
+	background-color: #f6f6f6;
+	width: 83px;
+	vertical-align: top;
+	padding: 9px;				
+}	
+div.rr-disclosure td.descnoborder{
+	border-right: 1px solid #ddd;
+	vertical-align: top;
+	padding: 9px;				
+}	
+div.rr-disclosure div.schumer table.schumer td.description{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	vertical-align: top;
+	padding: 9px;
+}
+
+div.rr-disclosure div.schumer table.schumer b{font-size: 12px}
+div.rr-disclosure div.schumer table.schumer span.rate{font-size:18px; font-weight:bold; color: #444444;}
+
+div.rr-disclosure div.schumer div.footnote{font-size: 12px; color: #333;}		
+/** This sets a hanging outdent for the Fees Schumer box **/
+div.rr-disclosure div.indent
+{
+margin-left:14px;
+text-indent:-11px
+} 
+
+/** Section **/
+div.rr-disclosure div.section{
+	display:block; 
+	border: 1px solid #ddd; 
+	background-color: #f6f6f6; 
+	text-align:center; 
+	font-weight:bold;
+	font-size: 12px; 
+	color: #333;
+	padding: 2px 2px 2px
+}
+
+/** FAQ's **/		
+div.rr-disclosure div.faqs{display:block}				
+div.rr-disclosure div.faqs div{	
+	font-size: 12px; 
+	color: #333;	
+}			
+
+div.rr-disclosure div.faqs div.section{display:block}	
+
+div.rr-disclosure div.faqs div.faq div.question{font-weight:bold}
+div.rr-disclosure div.faqs div.faq div.answer{}
+
+/** Rewards **/		
+div.rr-disclosure div.rewards{display:block}		
+div.rr-disclosure div.rewards div{	
+	font-size: 12px; 
+	color: #333;	
+}		
+
+div.rr-disclosure div.rewards div.section{display:block}	
+
+div.rr-disclosure div.rewards table.rewards{
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	margin: 0;
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;
+	width:70%
+}
+
+div.rr-disclosure div.rewards table.rewards td.header{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: #f6f6f6;
+	font-weight:bold;
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;
+}
+div.rr-disclosure div.rewards table.rewards td.condition{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;	
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;				
+}	
+div.rr-disclosure div.rewards table.rewards td.reward{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+div.rr-disclosure div.rewards div.faq div.question{font-weight:bold}
+div.rr-disclosure div.rewards div.faq div.answer{}
+
+div.rr-disclosure div.rewards div.footnote{font-size: 12px; color: #333;}	
+
+/** Terms **/		
+div.rr-disclosure div.terms{display:block}
+
+div.rr-disclosure div.terms div{	
+	font-size: 12px; 
+	color: #333;
+}
+
+div.rr-disclosure div.terms div.faq div.question{font-weight:bold}
+div.rr-disclosure div.terms div.faq div.answer{}
+div.rr-disclosure div.terms div.section{display:block}	
+
+div.rr-disclosure div.terms b{font-weight:bold; font-size:12px}				
+
+div.rr-disclosure div.terms div.small{font-size:10px}
+
+div.rr-disclosure div.terms li.medium{font-size:12px}
+/* remove bullet style option to override inline style */ 
+.rr-disclosure ul li {
+	background:none;
+}
+
+
+
+/* ADA Compliant RRD Disclosures */
+.rrd-ada-disclosure {
+	color: #262626;
+	background-color: #fff;
+	position: relative;
+}
+.rrd-ada-disclosure p { margin: 0 0 1em; }
+.rrd-ada-disclosure ol, .rrd-ada-disclosure ul {
+	margin: 0 0 1em 30px;
+	padding: 0;
+}
+.rrd-ada-disclosure h3 { font-size: 1.2em; }
+.rrd-ada-disclosure h4 { 
+	font-size: 1.1em;
+	margin-bottom: 5px;
+}
+.rrd-ada-disclosure h5 { 
+	font-size: 1em; 
+	text-decoration: underline;
+	margin-bottom: 5px;
+}
+.rrd-ada-disclosure .offscreen {
+	position: absolute;
+	top: -999em;
+}
+.rrd-ada-disclosure .rate {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #262626;
+}
+.rrd-ada-disclosure .underline { text-decoration: underline; }
+.rrd-ada-disclosure .indent {
+	margin-left:20px;
+	text-indent:-16px
+}
+.rrd-ada-disclosure table {
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+.rrd-ada-disclosure table caption, .rrd-ada-disclosure .schumertableheader {
+	background-color: #041c88;
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+	padding: 5px 10px;
+	display: block;
+	display: table-caption;
+}
+.rrd-ada-disclosure table th, .rrd-ada-disclosure table td {
+	padding: 10px;
+	margin: 0;
+	text-align: left !important;
+	vertical-align: top;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.rrd-ada-disclosure table th, .rrd-ada-disclosure .term {
+	width: 20%;
+	font-weight: bold;
+	background-color: #F6F6F6;
+}
+.rrd-ada-disclosure table  p { margin: 0 0 .5em; }
+.rrd-ada-disclosure .faqs { margin: 1em 0 0; }
+.rrd-ada-disclosure .faq { 
+	margin: 0 !important;
+	padding-left: 0;
+}
+.rrd-ada-disclosure .faq .question { font-weight: bold; }
+.rrd-ada-disclosure .section {
+	display: block;
+	background-color: #F6F6F6;
+	border: 1px solid #ddd;
+	text-align: center;
+	padding: 5px;
+	font-size: 1em;
+}
+.rrd-ada-disclosure hr {
+	background-color: #E5EBF0;
+	border: medium none;
+	clear: both;
+	color: #E5EBF0;
+	height: 1px;
+	margin: 1.2em 0;
+}
+.rrd-ada-disclosure th.termnoborder{
+	border: 0px;
+	border-right: 1px solid #ddd;
+	background-color: #f6f6f6;
+	width: 20%;
+	vertical-align: top;
+	padding: 9px;			
+	font-weight: bold;
+	border-left: 1px solid #ddd;
+}
+.rrd-ada-disclosure td.descnoborder{
+	border: none;
+	vertical-align: top;
+	padding: 9px;
+	border-collapse: collapse;
+}
+div.rrd-ada-disclosure div.schumer table.schumer td.description{
+	border-bottom: 1px solid #ddd;
+	vertical-align: top;
+	padding: 9px;				
+}
+.rrd-ada-disclosure td.feessubtable {
+	padding: 0;
+	border: 0px;
+	border-left: 1px;
+}
+.rrd-ada-disclosure table.feessubtable { border: 0px; }
+div.rrd-ada-disclosure div.schumer table.schumer td li { text-indent: 0px !important; font-size:12px; }
+
+
+.rrd-ada-disclosure li { background-image: none !important; }
+.rrd-ada-disclosure td.feessubtable {
+	padding: 0 !important;
+	border-bottom: none !important
+}
+.rrd-ada-disclosure table.feessubtable { border: none !important; }
+
+/** Disclosure for backward compatability **/
+/** Schumer **/
+div.schumer{display:block}
+
+/** Black background with White text **/
+td.schumertableheader{
+	background-color: #000000;
+	color: #ffffff;
+	padding-left:5px;
+}
+td.schumertableheader P{
+	MARGIN: 0px
+}
+div.schumer table.schumer{
+	width: 100%;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	margin: 0;
+}	
+div.schumer table.schumer td.term{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: #f6f6f6;
+	width: 83px;
+	vertical-align: top;
+	padding: 9px;
+	border-spacing:0px;
+}
+td.termnoborder{
+	border-right: 1px solid #ddd;
+	background-color: #f6f6f6;
+	width: 83px;
+	vertical-align: top;
+	padding: 9px;
+}
+td.descnoborder{
+	border-right: 1px solid #ddd;
+	vertical-align: top;
+	padding: 9px;
+}
+div.schumer table.schumer td.description{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	vertical-align: top;
+	padding: 9px;
+}
+
+div.schumer table.schumer b{font-size: 12px}
+div.schumer table.schumer span.rate{font-size:18px; font-weight:bold}
+
+div.schumer div.footnote{font-size: 12px; color: #333;}
+/** This sets a hanging outdent for the Fees Schumer box **/
+div.indent{
+    margin-left:14px;
+    list-style-position:outside;
+} 
+
+/** Section **/
+div.section{
+	display:block; 
+	border: 1px solid #ddd; 
+	background-color: #f6f6f6; 
+	text-align:center; 
+	font-weight:bold;
+	font-size: 12px; 
+	color: #333;
+	padding: 2px 2px 2px
+}
+
+/** FAQ's **/
+div.faqs{display:block}
+div.faqs div{	
+	font-size: 12px; 
+	color: #333;
+}
+
+div.faqs div.section{display:block}
+
+div.faqs div.faq div.question{font-weight:bold}
+div.faqs div.faq div.answer{}
+
+/** Rewards **/
+div.rewards{display:block}
+div.rewards div{
+	font-size: 12px; 
+	color: #333;
+}		
+
+div.rewards div.section{display:block}
+
+div.rewards table.rewards{
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	margin: 0;
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;
+	width:70%
+}
+
+div.rewards table.rewards td.header{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: #f6f6f6;
+	font-weight:bold;
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;
+}
+div.rewards table.rewards td.condition{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;	
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;
+}
+div.rewards table.rewards td.reward{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+div.rewards div.faq div.question{font-weight:bold}
+div.rewards div.faq div.answer{}
+
+div.rewards div.footnote{font-size: 12px; color: #333;}
+
+/** Terms **/
+div.terms{display:block}
+
+div.terms div{
+	font-size: 12px; 
+	color: #333;
+}
+
+div.terms div.faq div.question{font-weight:bold}
+div.terms div.faq div.answer{}
+div.terms div.section{display:block}	
+
+div.terms b{font-weight:bold; font-size:12px}
+
+div.terms div.small{font-size:10px}
+
+div.terms li.medium{font-size:12px} 
+    
+.linkStyle
+ {
+	color: #2866af;
+	outline: dotted;
+	outline-width:1px;
+}
+
+.noDotStyle{
+outline: none;
+}
+
+</style>
+<head>
+<title>Capital One Rates and Disclosures</title>
+
+</head>
+<body onload="javascript:setFcslogo()">
+
+                
+ <div style="font-size: 12px;width:700px;">
+ 
+        
+        
+
+ 
+    <div class="rrd-ada-disclosure"><h3>CAPITAL ONE<sup>&reg;</sup> IMPORTANT DISCLOSURES</h3><div class="schumer"><table class="schumer" cellpadding="0" cellspacing="0" border="0"><caption>					Interest Rates and Interest Charges				</caption><tr><th scope="row" class="term"><b>Annual Percentage Rate (APR) for Purchases</b></th><td class="description"><span class="rate">0%</span> introductory APR through your 08/2015 billing period.<br>After that, your APR will be <span class="rate">22.9%</span>.<br>This APR will vary with the market based on the Prime Rate.									</td></tr><tr><th scope="row" class="term"><b>APR for Transfers</b></th><td class="description"><b>22.9%</b>.<br>This APR will vary with the market based on the Prime Rate.											</td></tr><tr><th scope="row" class="term"><b>APR for Cash Advances</b></th><td class="description"><b>22.9%</b>.<br>This APR will vary with the market based on the Prime Rate.					</td></tr><tr><th scope="row" class="term"><b>Paying Interest</b></th><td class="description">						Your due date is at least 25 days after the close of each billing cycle. We will not charge you interest on new purchases, provided you have paid your previous balance in full by the due date each month. We will begin charging interest on cash advances and transfers on the transaction date.					</td></tr><tr><th scope="row" class="term"><b>Minimum Interest Charge</b></th><td class="description">						If you are charged interest, the charge will be no less than $0.50.					</td></tr><tr><th scope="row" class="term"><b>For Credit Card Tips from the Consumer Financial Protection Bureau</b></th><td class="description">				To learn more about factors to consider when applying for or using a credit card, visit the website of the Consumer Financial Protection Bureau at <b>http://www.consumerfinance.gov/learnmore</b>.			</td></tr></table></div><div class="schumer"><table class="schumer" cellpadding="0" cellspacing="0" border="0"><caption>Fees</caption><tr><td class="feessubtable"><table summary="Fees description" class="feessubtable" cellspacing="0" cellpadding="0" width="100%"><tr><th scope="row" class="term"><b>Annual Fee</b></th><td class="description"><b>$39</b> annually.									</td></tr></table></td></tr><tr><td class="feessubtable"><table summary="Fees description" class="feessubtable" cellspacing="0" cellpadding="0" width="100%"><tr><th scope="row" class="termnoborder"><b>Transaction Fees</b></th><td class="descnoborder">&nbsp;</td></tr><tr><th scope="row" class="termnoborder"><ul><li type="disc">Transfer <span class="offscreen">Transaction Fee:</span></li></ul></th><td class="descnoborder"><b>None.</b></td></tr><tr><th scope="row" class="term"><ul><li type="disc">Cash Advance <span class="offscreen">Transaction Fee:</span></li></ul></th><td class="description">						Either <b>$10</b> or <b>3%</b> of the amount of each cash advance, whichever is greater.					</td></tr></table></td></tr><tr><td class="feessubtable"><table summary="Fees description" class="feessubtable" cellspacing="0" cellpadding="0" width="100%"><tr><th scope="row" class="termnoborder"><b>Penalty Fees</b></th><td class="descnoborder">&nbsp;</td></tr><tr><th scope="row" class="termnoborder"><ul><li type="disc">Late Payment <span class="offscreen">Penalty Fee:</span></li></ul></th><td class="descnoborder">								Up to <b>$35</b>.							</td></tr><tr><th scope="row" class="termnoborder"><ul><li type="disc">Over-The-Credit-Limit <span class="offscreen">Penalty Fee:</span></li></ul></th><td class="descnoborder"><b>None.</b></td></tr><tr><th class="term"><ul><li type="disc">Returned Payment <span class="offscreen">Penalty Fee:</span></li></ul></th><td class="description">								Up to <b>$35</b>.							</td></tr></table></td></tr></table></div><br><div class="faqs"><h3 class="offscreen">Frequently Asked Questions</h3><div class="faq"><div class="question">How Do You Calculate My Balance?</div><div class="answer">						We use a method called &ldquo;average daily balance (including new transactions).&rdquo; See &ldquo;How Do You Calculate The Interest Charge?&rdquo; section in the enclosed Additional Disclosures.					</div></div><br><div class="faq"><div class="question">What Are My Billing Rights?</div><div class="answer">Information on your rights to dispute transactions and how to exercise those rights is provided in the &ldquo;Your Billing Rights&rdquo; section in the enclosed Additional Disclosures.</div></div><br><div class="faq"><div class="question">Am I Eligible For This Offer?</div><div class="answer">Please refer to the enclosed Additional Disclosures &amp; Terms and Conditions.</div></div><br><div class="faq"><div class="question">						What Should I Put For Total Annual Income?					</div><div class="answer">						You may include personal income, which is income you have earned, including full-time, part-time, or seasonal jobs, self-employment, interest or dividends, retirement, and public assistance. You may also include shared income, which is money from somebody else that is regularly deposited into your individual account or into a joint account that person shares with you. If you are over 21, you may also include somebody else&rsquo;s income that is regularly used to pay your expenses.					</div></div><br><div class="faq"><div class="question">What Will My APR Be If I Transfer A Balance?</div><div class="answer">												Any balances that you transfer through your 08/2015 billing period will receive your Transfer APR and will be posted to the Special Transfer segment of your account. Any balances that you transfer after that date will receive your Purchase APR and will be posted to the Purchase segment of your account unless the transfer is made in connection with a future offer from us.											</div></div><br><div class="faq"><div class="question">Can You Change My APRs?</div><div class="answer">										While a late payment won&rsquo;t cause your APR to increase, in the future, we may increase your APRs if market conditions change. If we increase your APRs for any reason other than an increase in the Prime rate, the new APRs will apply only to new transactions you make after we notify you of the change in writing.									</div><br><div class="question">Can You Change My Account Terms?</div><div class="answer">								We can change the terms of your account as permitted by law. When required, we will send you notice before doing so.							</div></div><br><div class="faq"><div class="question">How Do You Calculate My Variable Rates?</div><div class="answer">										Your variable rates may change when the Prime rate changes. We calculate variable rates by adding a percentage to the Prime rate published in <i>The Wall Street Journal</i> on the 25th day of each month. If the <i>Journal</i> is not published on that day, then see the immediately preceding edition. 																					Variable rates on the following segment(s) will be updated quarterly and will take effect on the first day of your January, April, July and October billing periods: 																											Non-Introductory Purchase APR: Prime plus 19.65%; 																																	Transfer APR: Prime plus 19.65%; 																															Cash Advance APR: Prime plus 19.65%. 													</div></div><br><div class="faq"><div class="question">										How Do You Determine My Credit Line?									</div><div class="answer">										We will determine your credit line after a review of your application and your ability to pay. If your application is approved, the minimum credit line you will receive is $300.									</div></div><br><div class="faq"><div class="question">						What Are The Daily Periodic Rates Used To Calculate My Interest?					</div><div class="answer">						The daily periodic rate for your													Introductory Purchase APR is 0.00000%,																	Non-Introductory Purchase APR is 0.06274%,																					Transfer APR is 0.06274%,																			and Cash Advance APR is 0.06274%.													See &ldquo;How Do You Calculate The Interest Charge?&rdquo; section in the enclosed Additional Disclosures.					</div></div><br><div class="faq"><div class="question">										How Do You Calculate My Minimum Payment?									</div><div class="answer">										If your balance is less than $25, your minimum payment will be equal to your balance. Otherwise, your minimum payment will be the greater of $25 or 1% of your balance plus new interest, late payment fees, and an amount equal to a full year of membership fees divided by 12. We will also add any past due amount to your minimum payment. If your Account is 180 days past due, part of a bankruptcy proceeding or otherwise charges off, the entire balance is due immediately.									</div></div><br><div class="medium">							MasterCard and the MasterCard Brand Mark are registered trademarks of MasterCard International Incorporated.						</div><br></div><div class="rewards"><h3 class="section"><u><i>THINGS YOU SHOULD KNOW ABOUT THIS REWARDS PROGRAM</i></u></h3><div class="faq"><br><div class="question"><strong>How do I earn rewards?</strong></div><div class="answer">You will earn 1.5% cash back on net purchases (purchases minus any credits or returns) only.&nbsp;Cash advances, balance transfers, and checks used to access your account are not considered purchases and will not earn rewards.</div></div><div class="faq"><br><div class="question"><strong>Will my rewards ever expire?</strong></div><div class="answer">Your rewards are yours for the life of the account&mdash;they will not expire. But if your account is closed, you will lose any rewards you have not redeemed.</div></div><div class="faq"><br><div class="question"><strong>Is there a limit to the amount of rewards I can earn?</strong></div><div class="answer">There is no cap to the amount of rewards you can earn on purchases.<br></div></div><div class="faq"><br><div class="question"><strong>How do I redeem my rewards?</strong></div><div class="answer">You can get your cash back upon request in the form of a statement credit or a check. You can also set up an automatic redemption preference; options include: (1) at a set time each calendar year or (2) when a specific threshold ($25, $50, $100 or $200) has been reached. Just go online to capitalone.com or contact our Rewards Center.&nbsp;You can also redeem for credits for previous purchases, gift cards, and more. Rates for these redemption options may vary and are subject to change without notice.&nbsp;</div></div><div class="faq"><br><div class="question"><strong>What happens if I do not set up an automatic redemption preference?</strong></div><div class="answer">Until you set up an automatic redemption preference, you will receive your cash back upon your request.</div></div><div class="faq"><br><div class="question"><strong>How often can I change my automatic redemption preference?</strong></div><div class="answer">You may change your automatic redemption preference at any time, but you cannot request an annual redemption to be fulfilled in the same month you make a change. If you have an automatic redemption preference, you may also make upon-request redemptions without interfering with your pre-established automatic redemption preference.</div></div><div class="faq"><br><div class="question"><strong>Is my account eligible to transfer rewards?</strong></div><div class="answer">Your account may be eligible to transfer rewards. Please be aware that transfers are only permitted between certain Capital One No Hassle Rewards accounts. Not all rewards products are eligible for transfer.</div></div><hr></div><div class="terms"><h3><u>ADDITIONAL DISCLOSURES &amp; TERMS AND CONDITIONS</u></h3><br><div class="medium">									I am applying to Capital One Bank (USA), N.A. (Capital One<sup>&reg;</sup>) for a credit card account.								</div><div class="medium"><ul><li style="list-style-type:none;margin-left:-1em" type="disc"><br>By applying, I understand that I am not eligible for this offer if:</li><li type="disc">My application is received after this offer has expired, is missing required information or the information is unreadable, inaccurate or cannot be verified.</li><li type="disc">My address is: a) outside of the 50 United States, Washington, D.C., or a U.S. military location; b) a correctional institution.</li><li type="disc">													My monthly income does not exceed my monthly rent/mortgage payment by at least $425 (my monthly income is my disclosed total annual income divided by 12) or I am otherwise determined to be unable to make my monthly payments based on income, estimated living expenses and other debt I am responsible for.												</li><li type="disc">											I am under 18 years of age or do not have a valid Social Security Number or Individual Taxpayer Identification Number.										</li><li type="disc">															I have previously applied for a Capital One credit card 2 or more times in the last 30 days.														</li><li type="disc">													I have 2 or more open credit card accounts with Capital One.												</li><li type="disc">I have a Capital One credit card that is past due.</li><li type="disc">I am over my credit line on a Capital One credit card.</li><li type="disc">I have had a Capital One credit card that has charged off within the past year.</li><li type="disc">I have a non-discharged bankruptcy (one that is still unresolved).</li><li type="disc">I do not have a credit report with any of the credit reporting agencies Capital One currently uses.</li><li style="list-style-type:none;margin-left:-1em" type="disc">Capital One credit card may refer to any card issued by Capital One, including co-brand and retail cards.</li><li style="list-style-type:none;margin-left:-1em" type="disc"><br>With respect to this offer, I acknowledge that:</li><li type="disc">Even if I am otherwise eligible for this offer, approval is based upon satisfying Capital One's credit standards.</li><li type="disc">Any delinquencies and default history I may have may be considered in determining my creditworthiness.</li><li type="disc">Capital One may contact me to obtain or confirm application information. Capital One&rsquo;s decision to contact me may be based on my creditworthiness.</li><li type="disc">I authorize Capital One to check my credit and employment history and to answer questions about its credit experience with me.</li><li type="disc">If I am interested in transferring a balance, I may call the customer service number with that request 10 days after my account has been opened.</li><li type="disc">If I am approved, Capital One may contact me from time to time regarding my Card and Account as described in my Capital One Customer Agreement. For example, when I give Capital One my mobile telephone number, I agree to receive calls and messages, including prerecorded messages, at that number from Capital One and their authorized agents including with an automatic telephone dialer (autodialer).</li><li type="disc">I will receive the Capital One Customer Agreement and am bound by its terms and all future revisions.</li><li type="disc">This offer is nontransferable.</li><li type="disc">The terms of this offer may not be applied to existing Capital One accounts.</li><li type="disc">Capital One will retain my response form whether or not it is approved.</li><li type="disc">I understand that, unless the offer discloses a specific credit line, the exact amount of my credit line will be determined by Capital One after review of my application and other information.</li><li type="disc">An applicant, if married, may apply for a separate account.</li><li type="disc">Certain restrictions apply to the card benefits in this offer. Full details will be mailed to me upon approval.</li><li type="disc">Everything that I have stated in this application is correct to the best of my knowledge.</li></ul></div></div><div class="terms"><h3><u><i>						THINGS YOU SHOULD KNOW ABOUT THIS CARD					</i></u></h3><div class="faq"><div class="question">							When Can I Request A Balance Transfer?						</div><div class="answer">							You may call the customer service number with that request 10 days after your account has been opened.						</div></div><br><div class="faq"><div class="question">					How Do You Apply My Payment?				</div><div class="answer">					We will apply your minimum payment to pay off lower-rate balances before paying off higher-rate balances. We will apply any portion of your payment in excess of your minimum payment to higher-rate balances before lower ones.				</div></div><br><div class="faq"><div class="question">						How Can I Avoid Paying Interest Charges?					</div><div class="answer">						If you pay your statement&rsquo;s &ldquo;New Balance&rdquo; in full by the due date, we will not charge interest on any new transactions that post to the Purchase balance. If you have been paying your account in full with no interest charges, but then you do not pay your next &ldquo;New Balance&rdquo; in full, we will charge interest on the portion of the balance that you did not pay. For cash advances and special transfers, we will start charging interest on the transaction date.					</div></div><br><div class="faq"><div class="question">						How Is The Interest Charge Applied?					</div><div class="answer">						Interest charges accrue from the 1) date of the transaction, 2) date the transaction is processed or 3) first calendar day of the billing period. Interest charges accrue on every unpaid amount until it is paid in full. This means you may owe interest charges even if you pay the entire &ldquo;New Balance&rdquo; one month, but did not do so for the previous month. Unpaid interest charges are added to the proper segment of your account. However, we reserve the right to not assess interest charges at any time.					</div></div><br><div class="faq"><div class="question">						How Do You Calculate The Interest Charge?					</div><div class="answer">						We use a method called Average Daily Balance (including new transactions). Under this method, we first calculate your daily balance; for each segment, 1) take the beginning balance and add in new transactions and the periodic interest charge on the previous day&rsquo;s balance, then 2) subtract any payments and credits for that segment as of that day. The result is the daily balance for each segment. However, if you paid your previous month&rsquo;s balance in full (or if your balance was zero or a credit amount), new transactions which post to your purchase or special purchase segments are not added to the daily balances. Also, transactions that are subject to a grace period are not added to the daily balances.						<br><br>Next, to find your Average Daily Balance: 1) add the daily balances together for each segment, and 2) divide the sum by the number of days in the billing cycle.						<br><br>At the end of each billing cycle, we determine your Interest Charge as follows: 1) multiply your Average Daily Balance by the daily periodic rate (APR divided by 365) for that segment, and 2) multiply the result by the number of days in the billing period. NOTE: Due to rounding or a minimum interest charge, this calculation may vary from the interest charge actually assessed.					</div></div><br><div class="faq"><div class="question">						Are Unauthorized Use Or $0 Fraud Liability Claims Subject To Investigation And Verification?					</div><div class="answer">						Yes.					</div></div><br><h3><u>								IMPORTANT INFORMATION ABOUT PROCEDURES FOR OPENING A NEW ACCOUNT:							</u></h3><div>								To help the government fight the funding of terrorism and money laundering activities, Federal law requires all financial institutions to obtain, verify and record information that identifies each	person who opens an account. <strong>What this means for you:</strong> When you apply for or open an account, we will ask for your name, address, date of birth and other information that will allow us to identify you. We may also ask to see your driver&rsquo;s license or other identifying documents.							</div><br><h4><i><u>STATE-SPECIFIC INFORMATION</u></i></h4><br><b>California Residents:</b><span> Applicants may: 1) after credit approval, use the credit card account up to its credit limit; 2) be liable for amounts extended under the plan to any joint applicant. As required by law, you are hereby notified that a negative credit report reflecting on your credit record may be submitted to a credit reporting agency if you fail to fulfill the terms of your credit obligations.</span><br><br><b>Ohio Residents:</b><span> Ohio anti-discrimination laws require creditors to make credit equally available to all creditworthy customers and that credit reporting agencies maintain separate credit histories on individuals upon request. The Ohio Civil Rights Commission administers these laws.</span><br><br><b>New York and Vermont Residents:</b><span> Capital One may obtain your credit reports, for any legitimate purpose associated with the account or the application or request for an account, including but not limited to reviewing, modifying, renewing and collecting on your account. On your request, you will be informed if such a report was ordered. If so, you will be given the name and address of the consumer reporting agency furnishing the report. New York residents may contact the New York State Department of Financial Services by telephone or visit its website for free information on comparative credit card rates, fees and grace periods. New York State Department of Financial Services: 1-877-226-5697 or http://www.dfs.ny.gov.</span><br><br><b>Wisconsin Residents:</b><span> No provision of any marital property agreement, unilateral statement, or court order applying to marital property will adversely affect a creditor&rsquo;s interests unless, prior to the time credit is granted, the creditor is furnished with a copy of the agreement, statement or court order, or has actual knowledge of the provision.</span><br><br><u><i><h3 class="section">						IMPORTANT INFORMATION ABOUT CREDIT REPORTING					</h3></i></u><div class="medium">						We may report information about your account to credit bureaus. Late payments, missed payments, or other defaults on your account may be reflected in your credit report.					</div><br><h5><center><u><i>								YOUR BILLING RIGHTS: KEEP THIS DOCUMENT FOR FUTURE USE							</i></u></center></h5><b>								This notice tells you about your rights and our responsibilities under the Fair Credit Billing Act.							</b><br><br><u><h5>								What To Do If You Find A Mistake On Your Statement:							</h5></u><div class="medium">								If you think there is an error on your statement, write to us at:							</div><div style="position:relative; left:1.25em"><br>						Capital One<br>						P. O. Box 30279<br>						Salt Lake City, UT 84130-0279					</div><br><div class="medium">								In your letter, give us the following information:							</div><div class="medium"><ul><li type="disc"><u>Account information:</u> Your name and account number.</li><li type="disc"><u>Dollar amount:</u> The dollar amount of the suspected error.</li><li type="disc"><u>Description of problem:</u> If you think there is an error on your bill, describe what you believe is wrong and why you believe it is a mistake.</li></ul></div><div class="medium">								You must contact us:							</div><div class="medium"><ul><li type="disc">Within 60 days after the error appeared on your statement.</li><li type="disc">At least 3 business days before an automated payment is scheduled, if you want to stop payment on the amount you think is wrong.</li></ul></div><div class="medium">								You must notify us of any potential errors <u><strong>in writing</strong></u>. You may call us or notify us electronically, but if you do we are not required to investigate any potential errors and you may have to pay the amount in question.							</div><br><u><h5>								What Will Happen After We Receive Your Letter.							</h5></u><br><b>								When we receive your letter, we must do two things:							</b><br><ol><li>Within 30 days of receiving your letter, we must tell you that we received your letter. We will also tell you if we have already corrected the error.</li><li>Within 90 days of our receipt of your letter, we will send you a written notice explaining either that we corrected the error (to appear on your next statement) or the reasons we believe the bill is correct.</li></ol><div class="medium">								While we investigate whether or not there has been an error, the following are true:							</div><br><div class="medium"><ul><li type="disc">We cannot try to collect the amount in question, or report you as delinquent on that amount.</li><li type="disc">The charge in question may remain on your statement, and we may continue to charge you interest on that amount.</li><li type="disc">While you do not have to pay the amount in question until we send you a notice about the outcome of our investigation, you are responsible for the remainder of your balance.</li><li type="disc">We can apply any unpaid amount against your credit limit.</li></ul></div><b>								After we finish our investigation, one of two things will happen:							</b><br><div class="medium"><ul><li type="disc"><u>If we made a mistake:</u> You will not have to pay the amount in question or any interest or other fees related to that amount.</li><li type="disc"><u>If we do not believe there was a mistake:</u> You will have to pay the amount in question, along with applicable interest and fees. We will send you a statement of the amount you owe and the date payment is due. We may then report you as delinquent if you do not pay the amount we think you owe.</li></ul></div><div class="medium">								If you receive our explanation but still believe your bill is wrong, you must write to us within <u><strong>10 days</strong></u> telling us that you still refuse to pay. If you do so, we cannot report you as delinquent without also reporting that you are questioning your bill. We must tell you the name of anyone to whom we reported you as delinquent, and we must let those organizations know when the matter has been settled between us.							</div><br><div class="medium">								If we do not follow all of the rules above, you do not have to pay the first $50 of the amount you question even if your bill is correct.<br></div><br><u><h5>								Your Rights If You Are Dissatisfied With Your Credit Card Purchases.							</h5></u><br><div class="medium">								If you are dissatisfied with the goods or services that you have purchased with your credit card, and you have tried in good faith to correct the problem with the merchant, you may have the right not to pay the remaining amount due on the purchase. To use this right, all of the following must be true:							</div><ol><li>You must have used your credit card for the purchase. Purchases made with cash advances from an ATM or with a check that accesses your credit card account do not qualify; and</li><li>You must not yet have fully paid for the purchase.</li></ol><div class="medium">								If all of the criteria above are met and you are still dissatisfied with the purchase, contact us <u><strong>in writing</strong></u> at:							</div><div style="position:relative; left:1.25em"><br>						Capital One<br>						P. O. Box 30279<br>						Salt Lake City, UT 84130-0279					</div><br><div class="medium">								While we investigate, the same rules apply to the disputed amount as discussed above. After we finish our investigation, we will tell you our decision. At that point, if we think you owe an amount and you do not pay, we may report you as delinquent.							</div><br></div></div>
+    
+
+
+
+</div>
+
+        <div id="popup_footerP"  style="width:742px;margin-top:10px;">
+                <div style="margin-left: 80%;">
+                 
+				<div id="closewnDown" style="float: right;_margin-right:65px;margin-right:55px;margin-bottom:25px;font-size:12px;"><a id="closeWindow" onfocus="javascript:setFocusStyle('fcs','closewnDown')" onblur="javascript:setFocusStyle('blr','closewnDown')" class="noDotStyle" tabindex="0" href="#" onclick="javascript:confirmClose();">Close window</a></div>
+        <a href="javascript:window.print();" style="background-image:none">
+                                <img alt="Print This Page" style=" margin-top: 0px;_padding-left: 580px; _margin-top: 0px;" border=0 src="/icoreapp/images/header/contentOne/info-body-print-this-page.gif"/> </a>
+								
+</div>
+        <div style="width:80%;">
+                                <p style="margin-top: 5px; color: graytext; margin-left: 20px;font-family: Arial,Helvetica,sans-serif;font-size: 12px"  >&copy;2014 Capital One.<br>The trademarks used herein are owned by Capital One.<br>All rights reserved.</br></br>
+                                 </p></div>
+</div>
+</div>
+
+</body>
+</html>
+

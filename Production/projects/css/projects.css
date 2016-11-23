@@ -1,0 +1,225 @@
+@media screen and (max-width: 1024px) {
+	#projectTextBack{
+		display: none;
+	}
+
+
+}
+
+/* Tablet */
+@media screen and (max-width: 1440px) {
+	
+	body{font-family:'Gotham-Book', helvetica, sans-serif;}
+
+	#projectTextBack{
+		display: none;
+	}
+
+	#imagesContainer img{
+		width:780px !important;
+	}
+
+
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #000;
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+
+#projectTextBack {
+    width: 420px; 
+    height:100%; 
+    background-color:#000; 
+    z-index: 998; 
+    position:fixed; 
+    right: 0; 
+    top: 0;
+}
+
+#navigationOverlay{
+	margin-left:100px;	
+}
+
+#navigationOverlay h1{
+	font-size: 100px;
+}
+
+#navigationOverlay a{color:#fff; text-decoration: none;}
+
+
+
+#projectTextBack h1{
+    color: #fff;
+    font-family: 'Gotham-Medium';
+    font-size: 42px;
+    margin-top: 85px;
+    margin-left: 49px;
+}
+
+#projectTextBack p{
+    margin-right: 49px;
+    margin-left: 49px;
+    margin-top: 100px;
+    line-height: 25px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+#imagesContainer{
+	width:1000px; 
+	height: 4013px; 
+	margin: auto;
+}
+
+#imagesContainer img{ margin-top: -4px;}
+
+#projectTextBack .button{
+    width: 200px;
+	height: 42px;
+	text-align: center;
+	background-color: #000;
+	font-size: 16px;
+	letter-spacing: 1px;
+	padding-top: 17px;
+	border: solid 2px #fff;
+    margin-left: 52px;
+    font-family: 'Gotham-Book';
+}
+
+#projectTextBack .button a{
+	color: #fff; 
+	text-decoration:none; 
+	display:block;  
+	height:100%; 
+	width:100%;
+    line-height: 22px;
+}
+
+#projectTextBack ul{
+    list-style-type: none;
+    margin-top: 30px;   
+}
+    
+#projectTextBack li {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    background-color: #313131;
+    margin-left: 7px;
+    margin-top: 5px;    
+}
+
+.share {
+	position: absolute;
+	bottom: 20px;
+	left: 24px;
+	margin: 0;
+	z-index: 1;
+	font-size: 0.9em;
+}
+
+#header{
+	position: absolute;
+	top:0;
+	height: 80px;
+	color:#fff;
+}
+
+.credit {
+	position: absolute;
+	bottom: 24px;
+	right: 24px;
+	margin: 0;
+	z-index: 1;
+	font-size: 0.9em;
+}
+
+.credit a {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.layer {
+	text-align: center;
+	text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.1 );
+}
+
+.layer h2 {
+	position: relative;
+	top: 30%;
+	margin: 0;
+	font-size: 6.25em;
+}
+
+.layer p {
+	position: relative;
+	top: 30%;
+	margin: 0;
+}
+
+
+#crisp{
+	background: url('../images/crisp/weather.jpg') center no-repeat; 
+	margin-top:10px;
+}
+
+.layer.two {
+	background: #95dc84;
+}
+
+.layer.three {
+	background: #64b9d2;
+}
+
+.bullets {
+	position: absolute;
+	width: 100%;
+	right : 3px;
+    bottom: 3px;
+	padding: 0;
+	margin-left: 20px;
+	z-index: 999999;
+	width:300px;
+    
+}
+
+	.bullets li {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		margin: 0 3px;
+
+		background: #6d6e6d;
+		box-shadow: 0px 0px 4px rgba( 0, 0, 0, 0.2 );
+		cursor: pointer;
+
+		-webkit-tap-highlight-color: rgba( 0, 0, 0, 0 );
+	}
+
+		.bullets li:hover {
+			background: rgba( 255, 255, 255, 0.8 );
+		}
+
+		.bullets li.active {
+			cursor: default;
+			background: #fff;
+		}
+
+
+

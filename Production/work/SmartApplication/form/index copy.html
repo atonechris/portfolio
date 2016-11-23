@@ -1,0 +1,492 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Apply for the Venture Card</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <!--    <script src="/js/bootstrap-slider.js"></script> -->
+
+    </head>
+
+    <body>
+    <!--   <div id="topBar">  <button id="addQuestions" name="addQuestions" class="btn btn-success pull-right">Live Chat</button>
+        </div> -->
+        
+        <div class="header">
+            <div class="container">
+                <img src="../img/header.jpg">
+            </div>
+        </div>      
+
+        
+    <div class="container" style="overflow:hidden; margin-top: -3px;">      
+ <div class="cardHero">
+    <div class="heroText">
+        <!--<h1>Your Adventure Awaits.</h1>
+
+        <div class="heroSub">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>-->
+    </div>
+    <div id="ventureCard">
+        <!--<img src="../img/ventureCard.png"> -->
+    </div>
+</div> 
+                   
+<div class="row"> 
+    <div class="col-md-12 alice">
+    <h3 class="alice" style="margin-top: 7px;"><span style="color:#003167;">The Venture Card.</span> Fly any airline, stay at any hotel, anytime.</h3>        
+
+    </div>
+</div>   
+        
+<div class="row"> 
+    <div class="col-md-9 pull-left">
+                <label class="control-label" for="cardUses">Basic Information</label>
+    <div class="row">
+
+    	<div class="col-md-6">         
+            <input id="emailInput" type="email" placeholder="Email" class="form-control floatlabel" required=""></div>
+    	<div class="col-md-6">
+                
+            <input id="password"  type="password" placeholder="Password (Optional)" class="form-control floatlabel" required=""></div>
+    </div>
+    <div class="row"> 
+        <!-- Text input-->
+        <div class="form-group">
+            <div class="col-md-5">
+                <input id="firstName" name="firstName" type="text" placeholder="First Name" class="form-control floatlabel" required="">
+            </div>
+            <div class="col-md-2">
+                <input id="MI" name="MI" type="text" placeholder="MI" class="form-control floatlabel" maxlength="1">
+            </div>
+            <div class="col-md-5">
+                <input id="lastName" name="lastName" type="text" placeholder="Last Name" class="form-control floatlabel" required="">
+            </div>
+        </div> 
+    </div>    
+        
+
+<!-- Text input-->
+<div class="form-group"> 
+    
+    <div class="row">            
+        
+        <div class="col-md-5">
+            <input type="text" name="address-line-1" id="addressOne" placeholder="Address Line 1" class="form-control floatlabel">
+          </div>     
+        <div class="col-md-5">
+            <input type="text" name="address-line-2" id="addressTwo" placeholder="Address Line 2" class="form-control floatlabel">
+          </div>
+                <p class="zip-error">Not a real zip code.</p>
+       <div class="zip-wrap col-md-2">
+            <input type="text" pattern="[0-9]*" maxlength="5" required name="zip" id="zip" placeholder="Zip" class="form-control floatlabel">
+       </div> 
+
+    </div>
+
+    <div class="row addressRow">
+
+        <div>
+          <div class="city-wrap col-md-5">
+            <input type="text" name="city" id="city" placeholder="City" class="form-control floatlabel">
+          </div>
+ <div class="state-wrap col-md-2">
+            <!-- <select name="state" class="form-control">
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AZ">AZ</option>
+            <option value="AR">AR</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DE">DE</option>
+            <option value="DC">DC</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="IA">IA</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="ME">ME</option>
+            <option value="MD">MD</option>
+            <option value="MA">MA</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MS">MS</option>
+            <option value="MO">MO</option>
+            <option value="MT">MT</option>
+            <option value="NE">NE</option>
+            <option value="NV">NV</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NY">NY</option>
+            <option value="NC">NC</option>
+            <option value="ND">ND</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VT">VT</option>
+            <option value="VA">VA</option>
+            <option value="WA">WA</option>
+            <option value="WV">WV</option>
+            <option value="WI">WI</option>
+            <option value="WY">WY</option>
+        </select>-->
+     
+                 <input type="text" name="state" id="state" placeholder="State" class="form-control floatlabel">
+
+          </div>  
+         <div class="state-wrap col-md-5">    
+            <input type="text" name="phone" id="phone" placeholder="Phone Number" class="form-control floatlabel">
+        </div>
+            
+        </div>
+    </div>
+
+    
+      </div>
+<!-- Text input-->
+<div class="row">
+    <div class="form-group">
+            
+
+    <div class="col-md-6">
+            <input id="socialSecurity" name="socialSecurity" type="text" placeholder="Social Security Number" class="form-control input-md floatlabel" required=""> 
+    </div>
+            
+    
+    <div class="col-md-6">
+        <img class="encrypt" src="../img/encryption.jpg">
+    </div>
+            
+   </div>   
+</div>
+<!--    
+<div class="row">
+    <div class="form-group">
+            
+
+    <div class="col-md-6">
+    <label class="control-label" for="Housing">Total Annual Income</label>
+
+  <div class="input-group">
+          <input id="income" name="appendedtext" class="form-control floatlabel" placeholder="$10,000" type="text" required="">
+          <span class="input-group-addon">.00</span>
+        </div>
+    </div>
+
+<div class="col-md-6">
+    <label class="control-label" for="birthday">Birthdate</label>
+        <input id="birthdate" name="appendedtext" class="form-control floatlabel" placeholder="xx/yy/zzzz" type="text" required="">
+</div>   
+            
+   </div>   
+</div>
+              
+        
+        
+<div class="row">    
+    <div class="form-group">
+             <div class="row noMargin">
+        <div class="col-md-4">
+    
+                <p>
+        <label class="control-label" for="master-dropdown">
+          Do you Rent or Own your home?
+        </label>
+     <select id="rentMortgage" name="selectbasic" class="form-control">
+          <option value="">Select One </option>
+          <option value="Rent">Rent</option>
+          <option value="Own">Own</option>
+
+   
+        </select>
+
+      </p>
+      
+                 <!--  
+                <div class="col-md-1">I'm a</div>
+                <div class="col-md-5"><input id="employment" name="employment" type="text" placeholder="Occupation" class="form-control input-md floatlabel" required="">
+                </div>     
+                <div class="col-md-1">at</div>
+                <div class="col-md-5">   
+                    <input id="employment" name="employment" type="text" placeholder="Company" class="form-control input-md floatlabel" required="">
+                </div>
+
+        
+     
+      
+          
+            </div>      
+                 
+ 
+           <div class="col-md-8" id="Own">
+            <label class="control-label" for="Housing">How much do you personally contribute to your monthly mortgage?
+</label>
+            <div class="input-group">        
+                      <input id="Own" name="Housing" class="form-control" placeholder=".00" type="text" required="">
+                     <span class="input-group-addon">.00</span>
+            </div>
+           </div>
+           
+            <div class="col-md-8" id="Rent">
+            <label class="control-label" for="Housing">How much do you personally contribute to your monthly rent?</label>
+                <div class="input-group">
+          <input id="Housing" name="Housing" class="form-control" placeholder="Not Including Utilities" type="text" required="">
+         <span class="input-group-addon">.00</span>
+
+                </div>
+           </div>                 
+            
+            
+        </div>  
+        
+         
+   </div>    
+    
+    
+    
+    </div>        
+        
+
+
+<div class="row negMargin">
+    <div class="form-group">
+        <div class="col-md-6">
+                        <label class="control-label" for="cardUses">What're you planning on using this card for most often?</label>
+       <select name="selectbasic" id="often" class="form-control">           <option value="#">Select One</option>
+                    <option value="2">Having Fun</option>
+                    <option value="3">Travel</option>
+                    <option value="4">Groceries</option>
+                    <option value="">Gas</option>
+        </select>            
+            
+        </div>
+        <div class="col-md-6">
+           <label class="control-label" for="payment">How're you planning on paying your credit card bill?</label>
+            <select name="selectbasic" class="form-control">
+                    <option value="#">Select One</option>
+                    <option value="2">Auto-Pay</option>
+                    <option value="3">Online</option>
+                    <option value="4">By Phone</option>
+                    <option value="">By Mail</option>
+            </select>          
+        </div>
+    </div>
+</div>
+
+
+<div class="row">              
+    <div class="form-group">
+        <div class="col-md-12">
+             <div class="row noMargin">
+    
+                <p>
+        <label class="control-label" for="master-dropdown">
+          What's your current employment situation?
+        </label>
+        <select id="Employed" name="selectbasic" class="form-control">
+          <option value="">Select an Occupation </option>
+          <option value="Employed">Employed</option>
+          <option value="Student">Student</option>
+          <option value="Retired">Retired</option>
+          <option value="Homemaker">Homemaker</option>
+          <option value="Not Employed">Not Employed</option>
+        </select>
+      </p>
+      
+
+            </div>   
+      <div class="row noMargin">     
+        <div id="schedule">
+          <label for="schedule">Please tell us more about your job</label>
+                
+<div class="row">   
+        <div class="col-md-4">
+        <select name="selectbasic" class="form-control">
+          <option value="fullTime">Full Time</option>
+          <option value="partTime">Part Time</option>
+        </select>
+        </div>    
+        <div class="col-md-4">
+            <input id="employment" name="employment" type="text" placeholder="Occupation" class="form-control input-md floatlabel" required="">
+        </div>    
+        <div class="col-md-4">
+            <input id="employment" name="employment" type="text" placeholder="Company" class="form-control input-md floatlabel" required="">
+        </div>
+</div> 
+        </div>           
+    </div>      
+            
+            
+        </div>  
+        
+         
+   </div>    
+</div>               
+
+     
+
+
+<div class="row">
+    <div class="form-group">
+        <div class="col-md-6">
+            <label class="control-label" for="selectbasic">How often do you carry a balance on credit cards?</label>
+            <select id="authorized" name="selectbasic" class="form-control">
+              <option value="#">Select One</option>
+              <option value="always">Always</option>
+              <option value="no">Often</option>
+              <option value="always">Rarely</option>
+              <option value="no">Never</option>                
+                
+                
+            </select>
+          </div>
+        <div class="col-md-6">
+          <label class="control-label" for="firstCard">Would you be interested in transferring a balance?</label>
+        <select id="transfer" name="" class="form-control">
+          <option value="Select One">Select One</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>        
+    </div>    
+</div>
+       -->    
+<div class="row"> 
+    <div class="col-md-12 moreThanImg">
+    <!-- <h3 class="moreThan">We see more in you, you’re more than just a credit score.</h3>   
+   <span class="aliceSm">
+Help us better fit your credit card experience by answering a few additional questions. <br />
+If you’d like to apply now, you’re free to do so.
+    </span>-->
+    </div>
+</div>    
+        
+<div class="row scroll">
+        <button id="addQuestions" name="addQuestions"  class="btn btn-success"><a id="optionalClick" href="educational.php" class="newQuestion">Answer Additional Questions</a>
+        </button>
+</div>   
+
+                                                             
+</fieldset>
+</form>
+</div>
+        
+        
+    <div class="col-md-3">
+        <div class="dialogue">    
+            <div class="stats">
+                <img src="../img/stats.jpg">
+            </div>
+            
+             <div class="emailWant" style="display:none;">
+                <span class="need">Why do we need this?</span>    
+                <p>This is our primary mode of communicating with you. If you'd like to finish your application at a later time, please create a password.</p>
+            </div>
+
+            <div class="addressWant" style="display:none;">
+                <span class="need">Why do we need this?</span>    
+                <p>In order to personalize our
+                    service we need you to provide
+                    us with some basic information.</p>
+            </div>         
+         
+            <div class="phoneWant" style="display:none;">
+                <span class="need">Why do we need this?</span>    
+                    <p>We’ll only use this number for support or to contact you with any questions related to your credit card account.</p>
+            </div>
+ 
+            <div class="annualIncome" style="display:none">
+                <span class="need">Why do we need this?</span>    
+                <p>This simply helps us figure how much credit is best to start off with.</p>
+            </div>            
+            
+           <div class="birthday" style="display:none">
+                <span class="need">Why do we need this?</span>    
+                <p>We need to know when to send the happy birthday! No, seriously we just need to know your age.</p>
+            </div>   
+            
+           <div class="whyHome" style="display:none">
+                <span class="need">Why do we need this?</span>    
+                <p>We like to reward wise financial decisions. Whether it be owning a home, or renting a house below your means. </p>
+            </div>              
+
+           <div class="whyOften" style="display:none">
+                <span class="need">Why do we need this?</span>    
+                <p>We want to maximize the fit. Its important for us to make sure your completely happy in our credit relationship. </p>
+            </div>              
+            
+              <div class="needThis" style="display:none;">
+                <span class="need">Why do we need this?</span>    
+                <p>As part of our credit approval
+                    process, we need to know your
+                    Social Security Number and
+                    Annual Income. This information
+                    is secure and will be used only
+                    for that purpose.</p>
+            </div>
+            
+            <div class="authorizedUser" style="display:none;">
+            <span class="need">Why do we need this?</span>
+                <p>
+           An authorized user is someone who has been added to someone else’s credit card account and can use that credit card. The authorized user often has a credit card with his/her own name printed on it. </p>
+            </div>
+
+           <div id="optionalWhy" style="display:none;">
+                <h3>Optional</h3>
+        <p>The more questions you enter, the more we know, and ultimately the better your credit experience will be. Feel free to stop at any point.</p>
+            </div>
+            
+            <div id="applyBtn" style="display:none">
+                <span class="set">You're all set!</span>
+        <p>Thanks for helping us better fit your card! If, at any point, you'd like to submit your application without answering additional questions, click the button below.</p>                
+        <button id="applyNow" name="applyNow" class="btn">Submit Application</button>
+       
+                
+            </div>
+        </div>
+    </div>   
+        
+</div>
+    <div id="demoFooter">
+        
+    </div>
+    <script src="../js/zip.js"></script>
+    <script src="../js/jquery.jscroll.js"></script>
+    <script src="../js/floatlabels.js"></script>
+    <script src="../js/jquery.dependent.fields.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+
+
+</script>  
+    </body>
+</html>

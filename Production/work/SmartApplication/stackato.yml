@@ -1,0 +1,7 @@
+name: taylor
+instances: 1
+framework:
+  type: php
+mem: 128
+url: ilab-stackato-dev11.kdc.capitalone.com
+disk: 2048

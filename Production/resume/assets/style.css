@@ -1,0 +1,305 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    }
+    
+body{
+    background: #c0c0c0;
+    font-family: 'helvetica', sans-serif;
+    color: #2a2a2a;
+}
+
+img{border:0;}
+
+
+h1{
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 100;
+    color: #000;
+}
+
+h2{
+ color:#696969;   
+    font-weight: 100;
+}
+
+#container{
+    width: 1024px;
+    min-height: 1800px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+}
+    
+
+#header{
+    height: 380px;
+    width: inherit;
+    background-image:url('self.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color:#fbfbfb;
+}
+
+#sidebar{
+    width:345px;
+    min-height: 600px;
+    position:fixed;
+    top: 400px;
+    padding-left:35px;
+}    
+
+#main{
+    width:644px;
+    min-height: 600px;
+    background-color: #fff;
+    float:right;
+}  
+
+#activity{
+ width: 644px;
+ height: 190px;
+}
+
+#name{
+    position: absolute;
+    top: 131px;
+    left: 35px;
+    font-size: 22px;
+    color: #696969;
+    font-weight: 100;
+}
+
+#title{
+    position: absolute;
+    top: 13px;
+    left: 35px;
+    font-size: 65px;
+    color: #000;
+    font-weight:100;
+}
+
+#skills{
+    position: absolute;
+    top: 191px;
+    left: 35px;
+    font-size: 14px;
+    color: #979797;   
+    width:600px;
+    line-height: 25px;
+    font-weight: 100;
+    
+}
+
+#portfolio{
+    width: 140px;
+    height:30px;    
+    text-align: center;
+    background-color: #3b5998;
+    webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    padding-top:10px;
+    color: #fff;
+    font-weight: 100;
+    position: absolute;
+    left: 385px;
+    top: -2px;
+}
+
+#portfolio a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#socialButtons{
+    top: 129px;
+    position: absolute;
+    left: 35px;
+}
+
+#socialButtons img{
+    margin-right: 51px;
+    margin-left: 3px;
+    border: none;
+}
+
+#subNav{
+    width: 1024px;
+    height: 75px;
+    background-color: #fff;
+    position: fixed;
+    top:0;
+    z-index: 98;
+}
+
+
+#subNav #title{
+    font-size: 26px;     
+}
+
+#subNav #socialButtons{
+    font-size: 16px;     
+    top: 12px;
+    position: absolute;
+    left: 320px;
+    z-index: 99;
+}
+
+.hidden{display:none;}
+
+
+
+#subNav #email{
+    width: 140px;
+    height:30px;    
+    text-align: center;
+    background-color: #3b5998;
+    webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    padding-top:10px;
+    margin-left: 860px;
+    color: #fff;
+    font-weight: 100;
+    margin-top: 15px;
+
+}
+
+#subNav #email a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+#skills li{
+    float:left;
+    padding-left:5px;
+    padding-right: 5px;
+    padding-top:2px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    background-color: #eaeaea;
+    margin-left:7px;
+    margin-top: 5px;
+    
+}
+
+#blurb{
+    position: absolute;
+    top: 123px;
+    left: 42px;
+    font-size: 16px;
+    color: #979797;
+    line-height: 22px;
+    display:none;
+}
+
+#bio{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 100;
+    color: #979797;   
+    line-height: 31px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.subTitle{
+ margin-bottom: 13px;
+   
+}
+
+.left{float:left;}
+.right{float:right;}
+
+.line{
+    border-color: #e0e0e0!important;
+}
+.item:first-child .line {
+margin-top: -24px;
+height: 50px;
+}
+
+.item .line {
+position: absolute;
+border-left: 1px solid #d9d9d9;
+height: 95px;
+float: left;
+margin-top: -55px;
+}
+
+.jobtitle{
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    color: #888888;
+    font-size:14px;
+    margin-top:3px;
+}
+
+.item {
+height: 85px;
+width: 100%;
+position: relative;
+padding-top: 9px;
+}
+
+.item .dot {
+background: #d9d9d9;
+border: 0;
+border-radius: 8px;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+height: 16px;
+width: 16px;
+position: absolute;
+left: -8px;
+top: 40px;
+}
+
+.item .content {
+margin-left: 21px;
+margin-top: 10px;
+height: 85px;
+overflow: hidden;
+font-size: 1.1em;
+color: #d9d9d9;
+font-weight: 100;
+}
+
+.content {
+color: #e0e0e0!important;
+}
+
+.school {
+color: #9f9f9f;
+font-size: 1.1em;
+}
+
+.actImage{
+    width: 250px;
+    height: 270px;
+    overflow: hidden;
+}
+
+.actCopy{
+    width: 365px;
+    height: 270px;
+    padding-left:10px;
+    line-height: 26px;
+    display: table-cell; vertical-align: middle;
+    color: #A2A2A2;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.actCopy ul{
+    padding-left:15px;  
+    padding-right:15px;   
+    
+}
+
+.actCopy li{
+    margin-bottom:5px;   
+}

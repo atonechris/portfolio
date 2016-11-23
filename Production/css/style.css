@@ -1,0 +1,903 @@
+/* Global */
+@font-face
+    {
+    font-family: 'Gotham-Book';
+    src: url(../fonts/Gotham-Book.otf);
+    }
+
+@font-face
+    {
+    font-family: 'Gotham-Medium';
+    src: url(../fonts/Gotham-Medium.otf);
+    }
+
+@font-face
+    {
+    font-family: 'Gotham-Bold';
+    src: url(../fonts/Gotham-Bold.otf);
+    }
+
+
+html, body {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #c0c0c0;
+    background-image: url('../images/background.jpg');
+	background-color:#fff;
+	height:100%;
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+img {
+	max-width: 100%;
+}
+
+a:link {
+	color: #f68f67;
+	text-decoration: none;
+	}
+
+a:hover {
+	color: #bde2df;
+	text-decoration: none;
+	}
+
+a:visited {
+	color: #f68f67;
+	text-decoration: none;
+	}
+
+::selection {
+	color:white;
+	background:black;
+	}
+
+::-moz-selection {
+	color:white;
+	background:black;
+	}
+
+#toolbar{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	height: 68px;
+	background-color: #0F0F0F;
+	z-index: 9990;
+	}
+
+#viewWorkbtn{
+    position: absolute;
+    top: 282px;
+    left: 599px;
+    width: 236px;
+    height: 79px;
+    text-align: center;
+    background-color: #000;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-top: 18px;
+
+}
+
+#container{
+	width: 1100px;
+	margin: auto;
+	position: relative;
+}
+
+#navIcon{
+    width: 68px;
+    height: 68px;
+    background-color: #424242;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    border-right:1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+#navIcon img{
+    margin-top: 17px;
+    margin-left: 10px;
+}
+
+
+#viewWorkbtn a{
+	display:block;
+}
+
+.blue{
+	color:#8f8f8f;
+	font-weight: 800;
+}
+
+
+
+
+/* Preloader */
+#preloader {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fafafa; /* change if the mask should have another color then white */
+	z-index:999; /* makes sure it stays on top */
+}
+
+#status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	top:50%; /* centers the loading animation vertically one the screen */
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
+
+}
+
+#status,
+#status:before,
+#status:after {
+  background: #FFF;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+
+#status {
+  text-indent: -9999em;
+  margin: 8em auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+#status:after {
+  left: 1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0 #FFF;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em #ffffff;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0 #FFF;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em #ffffff;
+    height: 5em;
+  }
+  }
+
+#scene{
+	padding: 0 !important;
+	margin-top: -40px;
+}
+
+/* Navigation */
+
+.menu {
+	position:fixed;
+	top:0px;
+	width:100%;
+	height:auto;
+	z-index:100;
+}
+
+#logo {
+	text-align: center;
+	margin: 10px 0;
+}
+
+#nav {
+	text-align: right;
+	margin: 30px 0 0 0;
+}
+
+
+.navigation{
+    width: 200px;
+    height: 55px;
+    text-align: center;
+    background-color: #000;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: -1px;
+}
+
+.navigation li{
+	color: #fff;
+	text-decoration:none;
+	display:block;
+	height:100%;
+	width:100%;
+    line-height: 56px;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+/* General Slides */
+
+.slide{
+	width:100%;
+	height:auto;
+	position: relative;
+}
+
+ #buttons{
+	 width: 600px;
+	 margin: auto;
+	 margin-bottom: 300px;
+
+ }
+
+#fog{
+	background-image: url('../images/fog.png');
+	background-repeat: no-repeat;
+	width: 1280px;
+	height:400px;
+	position: absolute;
+	top: -18px;
+}
+
+#button{
+    width: 175px;
+	height: 39px;
+	text-align: center;
+	background-color: #fff;
+	font-size: 16px;
+	letter-spacing: 7px;
+	padding-top: 17px;
+	color: #000;
+	text-transform: uppercase;
+}
+
+#button a{
+    color: #000;
+    font-family: 'Gotham-Medium';
+}
+
+.resume{
+    float:right;
+}
+
+.contact{
+    float:left;
+    margin-left: 83px;
+
+}
+
+.border-fade {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: inset 0 0 0 1px #e1e1e1, 0 0 1px rgba(0, 0, 0, 0);
+  /* Hack to improve aliasing on mobile/tablet devices */
+}
+.border-fade:hover, .border-fade:focus, .border-fade:active {
+  box-shadow: inset 0 0 0 1px #666666, 0 0 1px rgba(0, 0, 0, 0);
+  /* Hack to improve aliasing on mobile/tablet devices */
+}
+
+/* Slide 1 */
+
+#slide1{
+	height: 580px;
+    padding-top: 24px;
+}
+
+#intro{
+	width:1100px;
+	height: 226px;
+	text-align: left;
+}
+
+.white{
+	color:#fff;
+}
+
+
+#intro h1 {
+	font-size: 77px;
+	line-height: 85px;
+	color: #fff;
+	font-family: 'Gotham-Bold', cursive;
+	font-weight: 500;
+	margin: 0;
+	letter-spacing: 7px;
+	width: 200px;
+	top: -62px;
+	left: -4px;
+	position: absolute;
+	text-transform: uppercase;
+}
+
+
+.last {
+	margin-left: 701px !important;
+
+}
+
+#intro h2 {
+	font-size: 21px;
+	line-height: 85px;
+	color: #fff;
+	font-family: 'Gotham-Medium', sans-serif;
+	font-weight: 500;
+	margin: 0;
+	letter-spacing: 7px;
+	/* width: 200px; */
+	top: 12px;
+	left: 389px;
+	position: absolute;
+	text-transform: uppercase;
+}
+
+#name{
+	width: 954px;
+	height: 24px;
+	position: absolute;
+	top: 66px; bottom: 0; right: 0;
+	left: -28px
+
+}
+
+#workLink{
+	position: relative;
+	color:#fff;
+	width:200px;
+	height:30px;
+}
+
+
+#recentProjects{
+	width: 631px;
+	float:left;
+
+}
+
+#recentProjects h1{
+	text-transform: uppercase;
+	padding: 0 !important;
+	margin: 0 !important;
+	letter-spacing: 8px;
+	color: #818181;
+	font-size: 28px;
+	font-family: 'Gotham-Book', sans-serif;
+}
+
+#recentProjects p{
+	padding-right: 50px;
+	line-height: 31px;
+	color:#616161;
+}
+
+#prefer{
+	width: 248px;
+	float: left
+}
+
+#prefer h2{
+	text-transform: uppercase;
+	line-height: 20px;
+	letter-spacing: 3px;
+	font-size: 16px;
+	color: #818181;
+	font-family: 'Gotham-Book', sans-serif;
+}
+
+#prefer ul{
+	list-style-type: none;
+	float: left;
+	padding:0;
+}
+
+.preferTwo{
+	margin-left: 48px;
+}
+
+#prefer ul li{
+	font-family: 'Gotham-Book', sans-serif;
+	font-size: 13px;
+	color: #b8b8b8;
+	line-height: 30px;
+}
+
+#brands{
+	width: 214px;
+	float: left;
+}
+
+#brands img{
+	margin-top: 22px;
+	}
+
+#brands h2{
+	text-transform: uppercase;
+	line-height: 20px;
+	letter-spacing: 3px;
+	font-size: 16px;
+	color: #818181;
+	font-family: 'Gotham-Book', sans-serif;
+
+	}
+
+
+.projectTitle{
+	color: #c0c0c0;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.agencyName{
+	color: #bebebe;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.projectRoles{
+	color: #505050;
+	font-size: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height: 15px;
+	letter-spacing: 0.1em;
+
+}
+
+
+
+#method{
+	margin-bottom:50px;
+	}
+
+/* Project Background */
+
+
+#footer{
+	width:100%;
+	height: 320px;
+	background-color: black;
+	margin-top: -19px;
+}
+
+#madeIn{
+	margin: auto;
+	padding-top:100px;
+	width: 65px;
+}
+
+.clear{clear:both;}
+
+#projectsContainer ul{
+    width: 100%;
+    list-style-type: none;
+    margin:auto;
+    padding: 0;
+    font-family: 'Gotham-Book';
+}
+
+#projectsContainer ul li a{
+    color: #fff;
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 33px;
+    text-align: right;
+}
+
+#studiesContainer ul{
+    width: 100%;
+    list-style-type: none;
+    margin:auto;
+    padding: 0;
+    font-family: 'Gotham-Book';
+}
+
+#studiesContainer ul li a{
+    color: #fff;
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 33px;
+    text-align: right;
+}
+
+
+#crisp{
+    width: 20%;
+    height: 150px;
+    float: left;
+	background-image: url('../images/crispProject.png');
+	background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+}
+
+
+
+#remojobo{
+    width: 20%;
+    height: 150px;
+	float: left;
+	background-image: url('../images/remoProject.png');
+	background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+}
+
+
+#stockit{
+    width: 20%;
+    height: 150px;
+    float: left;
+	background-image: url('../images/stockitProject.png');
+	background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+
+}
+
+#mms{
+    width: 20%;
+    height: 150px;
+    float: left;
+    background-image: url('../images/mmsProject.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+    }
+
+
+#parkfast{
+    width: 20%;
+    height: 150px;
+    float: left;
+    background-image: url('../images/parkFastProject.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+    }
+
+
+
+
+/* Slide 3 */
+
+#slide3{
+	height: 105px;
+}
+
+
+#slide3 h1 {
+	font-size: 3.8em;
+	line-height: 0px;
+	color:#fff;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 5px;
+	text-transform: lowercase;
+}
+#slide3 h2 {
+	font-size: 1em;
+	color: #fff;
+	padding-bottom:20px;
+	font-weight: 400;
+	font-family: 'Carrois Gothic SC', sans-serif;
+	text-transform: lowercase;
+
+}
+
+.myName{
+	color: #575757;
+	font-size: 27px;
+	margin-left:466px;
+}
+
+
+
+
+
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+body{font-family:'Gotham-Book', helvetica, sans-serif;
+	background-position-x: center !important;
+}
+
+
+#slide1{
+    padding-top: 24px;
+}
+
+#slide2{
+	color:#ffffff;
+	font-family: sans-serif;
+	line-height: 10px !important;
+}
+
+
+#projectsContainer ul li a {
+	color: #fff;
+	display: block;
+	height: 100%;
+	width: 100%;
+	font-size: 33px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+
+
+#intro h1 {
+	font-size: 85px;
+	line-height: 85px;
+	color: #fff;
+	font-family: 'Gotham-Bold', sans-serif;
+	font-weight: 500;
+	margin: 0;
+	letter-spacing: 8px;
+	margin-left: 19px;
+	width: 200px;
+	top: -54px;
+	left: 15px;
+	position: absolute;
+}
+
+.last {
+	margin-left: 207px !important;
+	margin-top: 80px !important;
+}
+
+#intro h2{
+	top: 100px;
+	left: 263px;
+	font-size: 14px;
+}
+
+#last{
+	font-size: 69px;
+	line-height: 85px;
+	color: #ccc;
+	font-family: 'Berkshire Swash', cursive;;
+	font-weight: 500;
+	margin: 0;
+	letter-spacing: 1px;
+	position: absolute;
+	top: 97px;
+	left: 110px;
+}
+
+#recentProjects{
+	width: 800px;
+	margin-left:10px;
+}
+
+#projectsContainer ul {
+	list-style-type: none;
+	padding: 0;
+	font-family: 'Gotham-Book';
+}
+
+.slide{padding: 0;}
+
+
+#intro{
+	width:800px;
+	text-align: left;
+    margin-left: 80px;
+}
+
+
+#brands{
+	width: 214px;
+	float: left;
+	margin-left:20px;
+}
+
+#prefer{
+	width:400px;
+	float:left;
+	margin-left: 11px;
+	margin-top: 20px;
+}
+
+#crisp{
+    width: 50%;
+    height: 150px;
+    float: left;
+	background-image: url('../images/crispProject.png');
+	background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+}
+
+
+
+#remojobo{
+    width: 50%;
+    height: 150px;
+    float: left;
+	background-image: url('../images/remoProject.png');
+	background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+}
+
+
+#stockit{
+    width: 50%;
+    height: 150px;
+    float: left;
+	background-image: url('../images/stockitProject.png');
+	background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+
+}
+
+#mms{
+    width: 50%;
+    height: 150px;
+    float: left;
+    background-image: url('../images/mmsProject.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+    }
+
+
+#parkfast{
+    width: 50%;
+    height: 150px;
+    float: left;
+    background-image: url('../images/parkFastProject.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+    }
+
+#footer{margin-top: 70px;}
+
+#projectTitle a{
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+.resume {
+	position: absolute;
+	top: 202px;
+	left:40px;
+}
+
+.contact {
+	position: absolute;
+	top: 202px;
+	left:500px;
+}
+
+#toolbar{display:none;}
+
+.navigation{
+	width: 200px;
+    height: 55px;
+	float: center;
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+
+.slide{
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	width:100%;
+	position: relative;
+	padding: 0;
+}
+
+#decorative {
+	display:none;
+}
+
+
+
+
+#bio{
+	margin-top: 70px;
+}
+
+
+
+}
+
+
+
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+
+}
+/* Overlay */
+
+.modal {
+  display: none;
+  width: 100%;
+  height:100%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px #000;
+  -moz-box-shadow: 0 0 10px #000;
+  -o-box-shadow: 0 0 10px #000;
+  -ms-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #000;
+  overflow: scroll-y;
+}
+
+.modal a.close-modal {
+  position: absolute;
+  top: -12.5px;
+  right: -12.5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background: url(close.png) no-repeat 0 0;
+}
+
+.modal-spinner {
+  display: none;
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -32px;
+  margin-top: -32px;
+  background: url(spinner.gif) #111 no-repeat center center;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+}

@@ -1,0 +1,515 @@
+/** General **/
+body {
+	/** margin: 0;
+	padding: 0; **/
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	background-color: #fff;
+}
+td {
+    font-size: 12px;
+    color: #333;
+}
+a:link,
+a:hover,
+a:active {
+	color: #2866af;
+	outline: none;
+}
+a:visited {
+	color: #5780ae;
+	outline: none;
+}
+p {
+	margin: 12px 0;
+}
+sup,
+td sup {
+	font-size: 0.8em;
+	_font-size: 1em; /* Underscore hack - only read by WinIE */
+	vertical-align: text-top;
+	line-height: 1.2;
+}
+h1,
+td h1,
+div.page_title h1 {
+	margin: 0;
+	padding: 0;
+	font: bold 20px Arial, Helvetica, sans-serif;
+}
+h1 sup {
+	font-size: 0.4em;
+	_font-size: 0.55em; /* Underscore hack - only read by WinIE */
+}
+h2,
+td h2 {
+	font: bold 17px Arial, Helvetica, sans-serif;
+	margin: 10px 0 15px;
+}
+h2 sup {
+	font-size: 0.55em;
+	_font-size: 0.75em; /* Underscore hack - only read by WinIE */
+}
+h3,
+td h3 {
+	font: bold 15px Arial, Helvetica, sans-serif;
+}
+h3 sup {
+	font-size: 0.75em;
+	_font-size: 0.85em; /* Underscore hack - only read by WinIE */
+}
+form {
+	padding: 0;
+	margin: 0;
+}
+li li {
+	display: block;
+	float: none;
+	background-color: transparent;
+	border: 0;
+}
+li:hover ul, li.over ul {
+	display: block;
+}
+hr {
+	background-color: #c6d1de;
+	color: #c6d1de;
+	border-style: none;
+	width: 100%;
+	height: 1px;
+}
+td blockquote {
+	margin: 12px 0 12px 40px;
+}
+
+div.rr-disclosure{
+    margin:0 20px 10px;
+     width:720px;
+}
+
+/** Schumer **/
+div.rr-disclosure div.schumer{display:block}
+
+/** Black background with White text **/
+div.rr-disclosure td.schumertableheader{
+	background-color: #000000;
+	color: #ffffff;
+	padding-left:5px;
+}
+td.schumertableheader P{
+	MARGIN: 0px
+}
+div.rr-disclosure div.schumer table.schumer{
+	width: 100%;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	margin: 0;		
+}
+div.rr-disclosure div.schumer table.schumer td li {
+        text-indent: 0px !important;
+}
+div.rr-disclosure div.schumer table.schumer td.term{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: #f6f6f6;
+	width: 83px;
+	vertical-align: top;
+	padding: 9px;
+	border-spacing:0px;
+}	
+div.rr-disclosure td.termnoborder{
+	border-right: 1px solid #ddd;
+	background-color: #f6f6f6;
+	width: 83px;
+	vertical-align: top;
+	padding: 9px;				
+}	
+div.rr-disclosure td.descnoborder{
+	border-right: 1px solid #ddd;
+	vertical-align: top;
+	padding: 9px;				
+}	
+div.rr-disclosure div.schumer table.schumer td.description{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	vertical-align: top;
+	padding: 9px;
+}
+
+div.rr-disclosure div.schumer table.schumer b{font-size: 12px}
+div.rr-disclosure div.schumer table.schumer span.rate{font-size:18px; font-weight:bold; color: #444444;}
+
+div.rr-disclosure div.schumer div.footnote{font-size: 12px; color: #333;}		
+/** This sets a hanging outdent for the Fees Schumer box **/
+div.rr-disclosure div.indent
+{
+margin-left:14px;
+text-indent:-11px
+} 
+
+/** Section **/
+div.rr-disclosure div.section{
+	display:block; 
+	border: 1px solid #ddd; 
+	background-color: #f6f6f6; 
+	text-align:center; 
+	font-weight:bold;
+	font-size: 12px; 
+	color: #333;
+	padding: 2px 2px 2px
+}
+
+/** FAQ's **/		
+div.rr-disclosure div.faqs{display:block}				
+div.rr-disclosure div.faqs div{	
+	font-size: 12px; 
+	color: #333;	
+}			
+
+div.rr-disclosure div.faqs div.section{display:block}	
+
+div.rr-disclosure div.faqs div.faq div.question{font-weight:bold}
+div.rr-disclosure div.faqs div.faq div.answer{}
+
+/** Rewards **/		
+div.rr-disclosure div.rewards{display:block}		
+div.rr-disclosure div.rewards div{	
+	font-size: 12px; 
+	color: #333;	
+}		
+
+div.rr-disclosure div.rewards div.section{display:block}	
+
+div.rr-disclosure div.rewards table.rewards{
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	margin: 0;
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;
+	width:70%
+}
+
+div.rr-disclosure div.rewards table.rewards td.header{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: #f6f6f6;
+	font-weight:bold;
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;
+}
+div.rr-disclosure div.rewards table.rewards td.condition{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;	
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;				
+}	
+div.rr-disclosure div.rewards table.rewards td.reward{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+div.rr-disclosure div.rewards div.faq div.question{font-weight:bold}
+div.rr-disclosure div.rewards div.faq div.answer{}
+
+div.rr-disclosure div.rewards div.footnote{font-size: 12px; color: #333;}	
+
+/** Terms **/		
+div.rr-disclosure div.terms{display:block}
+
+div.rr-disclosure div.terms div{	
+	font-size: 12px; 
+	color: #333;
+}
+
+div.rr-disclosure div.terms div.faq div.question{font-weight:bold}
+div.rr-disclosure div.terms div.faq div.answer{}
+div.rr-disclosure div.terms div.section{display:block}	
+
+div.rr-disclosure div.terms b{font-weight:bold; font-size:12px}				
+
+div.rr-disclosure div.terms div.small{font-size:10px}
+
+div.rr-disclosure div.terms li.medium{font-size:12px}
+/* remove bullet style option to override inline style */ 
+.rr-disclosure ul li {
+	background:none;
+}
+
+
+
+/* ADA Compliant RRD Disclosures */
+.rrd-ada-disclosure {
+	color: #262626;
+	background-color: #fff;
+	position: relative;
+}
+.rrd-ada-disclosure p { margin: 0 0 1em; }
+.rrd-ada-disclosure ol, .rrd-ada-disclosure ul {
+	margin: 0 0 1em 30px;
+	padding: 0;
+}
+.rrd-ada-disclosure h3 { font-size: 1.2em; }
+.rrd-ada-disclosure h4 { 
+	font-size: 1.1em;
+	margin-bottom: 5px;
+}
+.rrd-ada-disclosure h5 { 
+	font-size: 1em; 
+	text-decoration: underline;
+	margin-bottom: 5px;
+}
+.rrd-ada-disclosure .offscreen {
+	position: absolute;
+	top: -999em;
+}
+.rrd-ada-disclosure .rate {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #262626;
+}
+.rrd-ada-disclosure .underline { text-decoration: underline; }
+.rrd-ada-disclosure .indent {
+	margin-left:20px;
+	text-indent:-16px
+}
+.rrd-ada-disclosure table {
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+.rrd-ada-disclosure table caption, .rrd-ada-disclosure .schumertableheader {
+	background-color: #000;
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+	padding: 5px 10px;
+	display: block;
+	display: table-caption;
+}
+.rrd-ada-disclosure table th, .rrd-ada-disclosure table td {
+	padding: 10px;
+	margin: 0;
+	text-align: left !important;
+	vertical-align: top;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.rrd-ada-disclosure table th, .rrd-ada-disclosure .term {
+	width: 20%;
+	font-weight: bold;
+	background-color: #F6F6F6;
+}
+.rrd-ada-disclosure table  p { margin: 0 0 .5em; }
+.rrd-ada-disclosure .faqs { margin: 1em 0 0; }
+.rrd-ada-disclosure .faq { 
+	margin: 0 !important;
+	padding-left: 0;
+}
+.rrd-ada-disclosure .faq .question { font-weight: bold; }
+.rrd-ada-disclosure .section {
+	display: block;
+	background-color: #F6F6F6;
+	border: 1px solid #ddd;
+	text-align: center;
+	padding: 5px;
+	font-size: 1em;
+}
+.rrd-ada-disclosure hr {
+	background-color: #E5EBF0;
+	border: medium none;
+	clear: both;
+	color: #E5EBF0;
+	height: 1px;
+	margin: 1.2em 0;
+}
+.rrd-ada-disclosure th.termnoborder{
+	border: 0px;
+	border-right: 1px solid #ddd;
+	background-color: #f6f6f6;
+	width: 20%;
+	vertical-align: top;
+	padding: 9px;			
+	font-weight: bold;
+	border-left: 1px solid #ddd;
+}
+.rrd-ada-disclosure td.descnoborder{
+	border: none;
+	vertical-align: top;
+	padding: 9px;
+	border-collapse: collapse;
+}
+div.rrd-ada-disclosure div.schumer table.schumer td.description{
+	border-bottom: 1px solid #ddd;
+	vertical-align: top;
+	padding: 9px;				
+}
+.rrd-ada-disclosure td.feessubtable {
+	padding: 0;
+	border: 0px;
+	border-left: 1px;
+}
+.rrd-ada-disclosure table.feessubtable { border: 0px; }
+div.rrd-ada-disclosure div.schumer table.schumer td li { text-indent: 0px !important; font-size:12px; }
+
+
+.rrd-ada-disclosure li { background-image: none !important; }
+.rrd-ada-disclosure td.feessubtable {
+	padding: 0 !important;
+	border-bottom: none !important
+}
+.rrd-ada-disclosure table.feessubtable { border: none !important; }
+
+/** Disclosure for backward compatability **/
+/** Schumer **/
+div.schumer{display:block}
+
+/** Black background with White text **/
+td.schumertableheader{
+	background-color: #000000;
+	color: #ffffff;
+	padding-left:5px;
+}
+td.schumertableheader P{
+	MARGIN: 0px
+}
+div.schumer table.schumer{
+	width: 100%;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	margin: 0;
+}	
+div.schumer table.schumer td.term{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: #f6f6f6;
+	width: 83px;
+	vertical-align: top;
+	padding: 9px;
+	border-spacing:0px;
+}
+td.termnoborder{
+	border-right: 1px solid #ddd;
+	background-color: #f6f6f6;
+	width: 83px;
+	vertical-align: top;
+	padding: 9px;
+}
+td.descnoborder{
+	border-right: 1px solid #ddd;
+	vertical-align: top;
+	padding: 9px;
+}
+div.schumer table.schumer td.description{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	vertical-align: top;
+	padding: 9px;
+}
+
+div.schumer table.schumer b{font-size: 12px}
+div.schumer table.schumer span.rate{font-size:18px; font-weight:bold}
+
+div.schumer div.footnote{font-size: 12px; color: #333;}
+/** This sets a hanging outdent for the Fees Schumer box **/
+div.indent{
+    margin-left:14px;
+    list-style-position:outside;
+} 
+
+/** Section **/
+div.section{
+	display:block; 
+	border: 1px solid #ddd; 
+	background-color: #f6f6f6; 
+	text-align:center; 
+	font-weight:bold;
+	font-size: 12px; 
+	color: #333;
+	padding: 2px 2px 2px
+}
+
+/** FAQ's **/
+div.faqs{display:block}
+div.faqs div{	
+	font-size: 12px; 
+	color: #333;
+}
+
+div.faqs div.section{display:block}
+
+div.faqs div.faq div.question{font-weight:bold}
+div.faqs div.faq div.answer{}
+
+/** Rewards **/
+div.rewards{display:block}
+div.rewards div{
+	font-size: 12px; 
+	color: #333;
+}		
+
+div.rewards div.section{display:block}
+
+div.rewards table.rewards{
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	margin: 0;
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;
+	width:70%
+}
+
+div.rewards table.rewards td.header{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background-color: #f6f6f6;
+	font-weight:bold;
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;
+}
+div.rewards table.rewards td.condition{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;	
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;
+}
+div.rewards table.rewards td.reward{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 7px 4px 9px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+div.rewards div.faq div.question{font-weight:bold}
+div.rewards div.faq div.answer{}
+
+div.rewards div.footnote{font-size: 12px; color: #333;}
+
+/** Terms **/
+div.terms{display:block}
+
+div.terms div{
+	font-size: 12px; 
+	color: #333;
+}
+
+div.terms div.faq div.question{font-weight:bold}
+div.terms div.faq div.answer{}
+div.terms div.section{display:block}	
+
+div.terms b{font-weight:bold; font-size:12px}
+
+div.terms div.small{font-size:10px}
+
+div.terms li.medium{font-size:12px}

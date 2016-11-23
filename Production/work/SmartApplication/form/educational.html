@@ -1,0 +1,83 @@
+<div class="row">
+    <div class="form-group">
+        <div class="col-sm-12 col-md-12 col-lg-12 center optionalImg">
+        </div>
+    </div>
+</div>
+             <div class="row negMargin">
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label class="control-label" for="cardUses">What're you planning on using this card for most often?</label>
+                                <select name="selectbasic" id="often" class="form-control">
+                                    <option value="#">Select One</option>
+                                    <option value="2">Having Fun</option>
+                                    <option value="3">Travel</option>
+                                    <option value="4">Groceries</option>
+                                    <option value="">Gas</option>
+                                </select>
+
+                            </div>
+                            <div class="col-md-6">
+                                <label class="control-label" for="payment">How're you planning on paying your credit card bill?</label>
+                                <select name="selectbasic" class="form-control">
+                                    <option value="#">Select One</option>
+                                    <option value="2">Auto-Pay</option>
+                                    <option value="3">Online</option>
+                                    <option value="4">By Phone</option>
+                                    <option value="">By Mail</option>
+                                </select>
+                            </div>
+                        </div>
+                </div>
+
+<div class="row">
+    <div class="form-group">
+        <div class="row noMargin">
+            <div class="col-md-4">
+                <label class="control-label" for="master-dropdown">
+                    Do you Rent or Own your home?
+                </label>
+                <select id="rentMortgage" name="selectbasic" class="form-control">
+                    <option value="">Select One</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Own">Own</option>
+                </select>
+            </div>
+            <div class="col-md-8" id="Own">
+                <label class="control-label" for="Housing">How much do you personally contribute to your monthly mortgage?
+                </label>
+                <div class="input-group">
+                    <input id="Own" name="Housing" class="form-control" placeholder=".00" type="text" required="">
+                    <span class="input-group-addon">.00</span>
+                </div>
+            </div>
+
+            <div class="col-md-8" id="Rent">
+                <label class="control-label" for="Housing">How much do you personally contribute to your monthly rent?</label>
+                <div class="input-group">
+                    <input id="addHousing" name="Housing" class="form-control" placeholder="Not Including Utilities" type="text" required="">
+                    <span class="input-group-addon">.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <button id="addQuestions" name="addQuestions" style="width:100%" class="btn btn-success"><a href="spend.php" class="newQuestion">Answer Additional Questions</a>
+    </button>
+</div>
+
+<script>
+    $('#lastCollege').dependsOn('#toCollege', ['Yes']);
+    $('#collegeMajor').dependsOn('#toCollege');
+
+
+    $('#rentMortgage').focusin(function () {
+        $('.wantThis').fadeIn('6000');
+    });
+
+    $('#addHousing').focusin(function () {
+        $('.wantThis').fadeOut('6000');
+    });
+</script>
