@@ -36,6 +36,8 @@ h3{
 	margin-top: 25px;
 }
 
+
+
 #nav{
 	position: absolute;
 	right:20px;
@@ -58,6 +60,7 @@ h3{
 	border-bottom: 1px solid white;
 	color: white;
 	font-family: 'Lora', serif;
+	margin-top: 100px
 }
 
 .company{
@@ -78,7 +81,7 @@ h3{
 		float: left;
 		text-align: right;
 
-		    padding-top: 10px;		
+		    padding-top: 10px;
 	}
 
 
@@ -115,6 +118,34 @@ h3{
 	color: #c4c4c4;
 }
 
+/* Font */
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: local('Avenir Next Medium'), local('AvenirNext-Medium'),
+		url('../fonts/AvenirNext-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: local('Avenir Next Medium Italic'), local('AvenirNext-MediumItalic'),
+		url('../fonts/AvenirNext-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir Next';
+	src: local('Avenir Next Regular'), local('AvenirNext-Regular'),
+		url('../fonts/AvenirNext-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
 a:link {
 	color: #06c7ff;
 	text-decoration: none;
@@ -146,14 +177,19 @@ a:visited {
 	padding-top: 65px;
 	margin-bottom: 227px;
 	height: 100%;
+	position: relative;
 }
 
 #logo{
 	position: absolute;
 	top: 6px;
 	left: 2px;
-	width: 100px;
+	width: 200px;
 	height: 100px;
+	font-family: 'Avenir Next', sans-serif;
+	font-size: 27px;
+	color: white;
+	letter-spacing: 2px;
 }
 
 #projects{
