@@ -64,17 +64,23 @@ h3{
 	margin-top: 160px;
 }
 
+#job{
+	margin-bottom: 70px;
+
+}
+
 .company{
-		width: 33%;
+		width: 36%;
 		float: left;
 		font-size: 23px;
 	}
 
 .title{
-		width: 33%;
+		width: 30%;
 		float: left;
-		text-align: center;
+		text-align: left;
 	  padding-top: 10px;
+
 	}
 
 .dates{
